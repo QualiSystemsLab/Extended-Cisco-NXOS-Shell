@@ -1,5 +1,5 @@
 # Extended-Cisco-NXOS-Shell
-Cisco NXOS Shell extended to also configure VLANs on Cisco NXOS ports and port channels. The new commands reside in the **Resource Drivers - Python** folder, in the *cisco_nxos_ext.py* file, while the modified commands reside in the *cisco_nxos_ext.py* file.
+Cisco NXOS Shell extended to also configure VLANs on Cisco NXOS ports and port channels. The modified VLAN commands reside in the **Resource Drivers - Python** folder, in the *cisco_nxos_ext.py* file, while the modified commands reside in the *cisco_nxos_ext.py* file.
 
 <h2>Specific modifications</h2>
 
