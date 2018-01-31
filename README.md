@@ -17,4 +17,4 @@ Modified the ConfigCommandMode init commands (in the *cisco_nxos_resource_driver
     
     ConfigCommandMode.EXIT_COMMAND = "end"
   
-Modified ConnectivityRunner to execute the AddVlanFlow and RemoveVlanFlow commands
+Overrode ConnectivityRunner to execute the modified AddVlanFlow and RemoveVlanFlow commands
