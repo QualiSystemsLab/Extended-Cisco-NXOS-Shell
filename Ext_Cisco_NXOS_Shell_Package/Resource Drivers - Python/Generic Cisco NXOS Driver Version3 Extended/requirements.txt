@@ -1,0 +1,4 @@
+cloudshell-automation-api>=7.0,<7.1
+cloudshell-networking-devices>=2.3,<2.4
+cloudshell-networking-cisco>=5.2,<5.3
+cloudshell-networking-cisco-nxos>=5.2,<5.3
