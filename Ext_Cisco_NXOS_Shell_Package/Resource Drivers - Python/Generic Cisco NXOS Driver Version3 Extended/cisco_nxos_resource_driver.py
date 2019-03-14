@@ -118,7 +118,7 @@ class CiscoNXOSDriver(ResourceDriverInterface, NetworkingResourceDriverInterface
 
         return result_str
     
-    def some_command(self, command)
+    def some_command(self, context, command)
         logger = get_logger_with_thread_id(context)
         api = get_api(context)
 
@@ -127,9 +127,9 @@ class CiscoNXOSDriver(ResourceDriverInterface, NetworkingResourceDriverInterface
                                                                   context=context)
 
         cli_handler = CliHandler(self._cli, resource_config, logger, api)
-        with self._cli_handler.get_cli_service(self._cli_handler.enable_mode) as session:
+        with cli_handler.get_cli_service(cli_handler.enable_mode) as session:
             session.send_command("some command")
-            with session.enter_mode(self._cli_handler.config_mode) as config_session:
+            with session.enter_mode(cli_handler.config_mode) as config_session:
                 config_session.send_command("some config command")
 
     def send_custom_command(self, context, custom_command):
